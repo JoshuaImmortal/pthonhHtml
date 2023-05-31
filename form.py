@@ -1,23 +1,12 @@
 import webbrowser
 form = open('table.html', 'w')
-# html_template = """<html lang='en'>
-# <head>
-# <meta charset='utf-8'>
-# <meta name="view-port" content='width=device-width, initial_scale='1.0''>
-# <meta http-equiv="X-UA-Compatible" content="IE=edge">
-# <title>form Element</title>
-# </head>
-# <body>
-# <div id='wrapper' style='background-color: red;'>
-# <form  action='' method=''>
-# <input type='text' placeholder='enter your fisrt name'>
-# <input type='password' placeholder='lenghten password to five xters'>
-# <button type='submit'>SignIn</button>
-# </form>
-# </div>
-# </body>
-# </html>"""
 html_template = """<table border="1" cellspacing="3" cellpadding="20">
+<head>
+<meta charset= 'utf-8'>
+<meta name='viewport' content='width=device-width'>
+<meta http-equiv= 'X-UA compatible' content= 'IE-edge'>
+<title>PYTHON TABLE</title>
+</head>
         <caption>PROGRAMMING CLASS TIME TABLE</caption>
         <thead>
             <tr>
