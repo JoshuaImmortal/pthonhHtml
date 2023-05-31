@@ -7,7 +7,7 @@ for x in range(5):
     password = input('Type in your pin:')
     Assignment.write('Password: '+ password + '\n')
     store['Pin'] = password
-    Assignment.write("person = "+str(store))
+    Assignment.write("person = "+str(store) + '\n')
     print('Successful')
 Assignment.close()
 print('Database Full')
