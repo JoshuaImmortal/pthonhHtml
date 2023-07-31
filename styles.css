@@ -1,0 +1,14 @@
+
+        *{
+            margin:0;
+            box-sizing:border-box;
+        }
+        #wrapper{
+            border: .2rem solid red;
+        }
+        table{
+            border: .2rem ridge blue;
+            width:95%;
+            margin:0 auto;
+            height:90vh;
+        }

@@ -1,12 +1,31 @@
 import webbrowser
-form = open('table.html', 'w')
-html_template = """<table border="1" cellspacing="3" cellpadding="20">
+table = open('table.html', 'w')
+style = open('styles.css', 'w')
+style_template = """
+        *{
+            margin:0;
+            box-sizing:border-box;
+        }
+        #wrapper{
+            border: .2rem solid red;
+        }
+        table{
+            border: .2rem ridge blue;
+            width:95%;
+            margin:0 auto;
+            height:90vh;
+        }
+"""
+html_template = """<html lang = 'en'>
 <head>
 <meta charset= 'utf-8'>
 <meta name='viewport' content='width=device-width'>
 <meta http-equiv= 'X-UA compatible' content= 'IE-edge'>
+<link rel = "stylesheet" href = "styles.css">
 <title>PYTHON TABLE</title>
 </head>
+<div id = 'wrapper'>
+    <table table border="1" cellspacing="3" cellpadding="20">
         <caption>PROGRAMMING CLASS TIME TABLE</caption>
         <thead>
             <tr>
@@ -49,7 +68,11 @@ html_template = """<table border="1" cellspacing="3" cellpadding="20">
                 <td>Project Defense</td>
             </tr>
         </tbody>
-    </table>"""
-form.write(html_template)
-form.close()
+    </table>
+</div>
+</html>"""
+table.write(html_template)
+style.write(style_template)
+table.close()
+style.close()
 webbrowser.open('table.html')
